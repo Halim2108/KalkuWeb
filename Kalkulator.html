@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KalkulatorKu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="header">
+          <div class="list-item">
+            <a href="#">
+              <img src="" alt="" class="icon" />
+              <span class="description-header">KalkulatorWeB</span>
+            </a>
+          </div>
+          <div class="illustrasi">
+            <img src="gambar/Frame 10.png" alt="" />
+          </div>
+        </div>
+        <div class="main">
+          <div class="list-item">
+            <a href="#historyList">
+              <img src="Gambar/history.svg" alt="" class="hs" />
+              <span class="description">History</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content">
+        <div id="menu-button">
+          <input type="checkbox" id="menu-checkbox" />
+          <label for="menu-checkbox" id="menu-label">
+            <div id="hamburger"></div>
+          </label>
+        </div>
+        <div class="kalkulator">
+          <div class="flex-container-column card">
+            <div class="display">
+              <h1 id="displayNumber">0</h1>
+            </div>
+            <div class="flex-container-row">
+              <div class="button">1</div>
+              <div class="button">2</div>
+              <div class="button">3</div>
+              <div class="button operator">/</div>
+            </div>
+            <div class="flex-container-row">
+              <div class="button">4</div>
+              <div class="button">5</div>
+              <div class="button">6</div>
+              <div class="button operator">-</div>
+            </div>
+            <div class="flex-container-row">
+              <div class="button">7</div>
+              <div class="button">8</div>
+              <div class="button">9</div>
+              <div class="button operator">+</div>
+            </div>
+            <div class="flex-container-row">
+              <div class="button clear">C</div>
+              <div class="button">0</div>
+              <div class="button operator">x</div>
+              <div class="button equals">=</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="history-card">
+      <div class="history-reset">
+        <h2>Riwayat Perhitungan</h2>
+        <img src="Gambar/download.png" alt="" class="reset-button">
+      </div>
+      <table>
+          <thead>
+              <tr>
+                  <th>Angka Pertama</th>
+                  <th>Operator</th>
+                  <th>Angka Kedua</th>
+                  <th>Hasil</th>
+              </tr>
+          </thead>
+          <tbody id="historyList"></tbody>
+      </table>
+    </div>
+    <script src="js/localStorage.js"></script>
+    <script src="js/App.js"></script>
+    <script src="js/sidebar.js"></script>
+  </body>
+</html>
